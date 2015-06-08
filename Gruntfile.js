@@ -5,17 +5,16 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		jshint: {
             options: {
-            	jshintrc: {
-					"curly": true,
-					"eqnull": true,
-					"eqeqeq": true,
-					"undef": true,
-					"globals": {
-				    	"jQuery": true
-				 	}
-				},
-				all: ['/js/*.js']
-            }
+            	"curly": true,
+				"eqnull": true,
+				"eqeqeq": true,
+				"undef": true,
+				"globals": {
+			    	"jQuery": true,
+			    	"console": true
+			 	}
+            },
+            all: ['js/*.js']
         }
 	});
 
