@@ -1,0 +1,18 @@
+.searchbar {
+	text-align: center;
+	padding-top: 5%;
+	font-family: "Betafont-Thin";
+}
+
+@font-face {
+	font-family: "Betafont-Thin";
+	src: url(Betafont-Thin.otf);
+}
+
+#results {
+	font-family: "Betafont-Thin";
+}
+
+.article {
+	border-top: 1px solid #ccc;
+}

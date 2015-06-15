@@ -3,6 +3,15 @@ module.exports = function(grunt) {
 
     // project configuration
     grunt.initConfig({
+        connect:  {
+            server: {
+                options: {
+                    keepalive: true,
+                    port: 9001,
+                    base: 'www-root'
+                }
+            }
+        },
         jshint: {
             options: {
             "curly": true,
@@ -17,12 +26,13 @@ module.exports = function(grunt) {
                 "console": true
                 }
             },
-        all: ['js/*.js']
+        all: ['www-root/*.js']
         }
     });
 
     // loading tasks (plugins)
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     // register tasks
     // grunt.registerTask('default', ['uglify']);
