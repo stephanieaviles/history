@@ -10,17 +10,24 @@
 		<input id="datePicker" type="date" />
 		<input type="button" id="search" value="search"/>
 	</div>
-	<ul id="results" style="list-style-type: none">
-	</ul>
 
+	<div id="results" style="list-style-type: none"></div>	
 
-	<script src="js/lib/jQuery-min.js"></script>
+	<script type="text/template" class="template">
+		<div class="article">
+			<h2><b><%= headline %></b></h2>
+			<p><%= leadparagraph %></p>
+			<a href="<%= url %>"><%= url %></a>
+			</div>
+	</script>
+
+	<script src="js/lib/jquery-min.js"></script>
 	<script src="js/lib/underscore-min.js"></script>
 	<script src="js/lib/backbone-min.js"></script>
 	<script src="js/models/history.js"></script>
 	<script src="js/models/history-collection.js"></script>
+	<script src="js/views/history-view.js"></script>
+	<script src="main.js"></script>
 
-	<!-- <script src="js/views/history-view.js"></script> -->
-	<!-- <script type='text/javascript' src='test.js'></script> -->
 </body>
 </html>

@@ -46,7 +46,7 @@ function svc_search_v2_articlesearch(response) {
 		"</p>" +
 		"</li>" + 
 		"<br>");
-	};	
+	}	
 }
 
 

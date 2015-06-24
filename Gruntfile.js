@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                 options: {
                     keepalive: true,
                     port: 9001,
-                    base: 'www-root'
+                    base: './'
                 }
             }
         },
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 "console": true
                 }
             },
-        all: ['www-root/*.js']
+        all: ['/*.js']
         }
     });
 
